@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+   <html>
+       <head>
+           <meta charset="utf-8"/>
+           <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+           <title>bards</title>
+           <link rel="stylesheet" type="text/css" href="style/syle.css">
+
+           <style>
+                body 
+                {
+                background-color: lightslategrey; 
+                color: rgb(73, 6, 6);
+                margin: 5% 10%;
+                }
+
+                h1 
+                {
+                    text-align: center;
+                    font-size: 40px;
+                }
+
+                p 
+                {
+                    font-size: 20px;
+                    text-align: center;
+                } 
+
+                #gallery {
+                
+                display: -ms-grid;
+                display: grid;
+
+                width: 100%;
+                height: 100%;
+
+                grid-template-rows: repeat(2, 1fr);
+
+             
+                grid-template-columns: repeat(3, 1fr);
+
+                grid-auto-columns: minmax(270px, 1fr);
+                grid-auto-flow: column dense;
+
+                -ms-grid-gap: 10px;
+                grid-gap: 10px;
+                gap: 10px;
+            }
+
+            #gallery a, #gallery img {
+                width: 100%;
+                height: 100%;
+            }
+           </style>
+        </head>
+
+        <body>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">home page</a>
+                    </li>
+                    <li>
+                        <a href="rogue.html">rogues</a>
+                    </li>
+                    <li>
+                        <a href="monk.html">monks</a>
+                    </li>
+                    <li>
+                        <a href="bard.html">bards</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <h1>Bard</h1>
+            <!-- i put my content in two sections bc i thought that it looked better -->
+
+            <p> Now i havent played as a bard yet but i wanted to before i was talked out of it by Hans. </p>
+
+            <br/>
+
+            <p> Bards have a certian reputation for being a bit flirty and such. This is the reason i wanted to play as one but again i was talked down from it by Hans because he could not comprehend the pure power of me as a Bard. </p>
+
+            <P></P>
+            <!-- i was going to put something here but that didnt happen -->
+
+            <div id="gallery">
+                <!-- pictures of diffrent types of bards -->
+    
+                
+                <img src="pictures/bard1.png"/>
+                
+                <img src="pictures/bard2.png">
+
+                <img src="pictures/bard3.jpg">
+
+                <img src="pictures/bard4.png">
+
+                <img src="pictures/bard5.png">
+
+                <img src="pictures/bard6.jpg">               
+           
+            </div>
+        </body>
+   </html>

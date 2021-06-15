@@ -1,0 +1,18 @@
+body 
+{
+background-color: rgb(73, 6, 6); 
+color: lightslategrey;
+margin: 5% 10%;
+}
+
+h1 
+{
+    text-align: center;
+    font-size: 40px;
+}
+
+p 
+{
+    font-size: 20px;
+    text-align: center;
+} 

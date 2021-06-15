@@ -1,103 +1,149 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title> star wars </title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
-</head>
-<body>
-    <!-- i can qoute off full episodes now lets so something with that -->
-    <h1>star wars the clone wars</h1>
-    <p title="words"> i know <strong> way to much </strong> about the clone wars is it what i watch when im at home and theres nothing else </p>
+   <html>
+       <head>
+           <meta charset="utf-8"/>
+           <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+           <title>homepage</title>
+           <link rel="stylesheet" type="text/css" href="style/syle.css ">
 
-    <img src="Star_Wars_The_Clone_Wars.png" alt="a picture of the star wars the clone wars title screen" width="500">
-    
-    <!-- lots of break lines  -->
-    
-    <br/>
-    <br/>
-    <br/>
-    <br/>
+           <style>
 
-    <!-- its a guessing game as to which one has acctual content, its all trial and error -->
+            /* i did my style sheets wrong so there are bits of styling everywhere */
 
-    <a href="nope.html">season 1</a>
-    <br/>
-    <a href="nope.html">season 2</a>
-    <br/>
-    <a href="nope.html">season 3</a>
-    <br/>
-    <a href="nope.html">season 4</a>
-    <br/>
-    <a href="nope.html">season 5</a>
-    <br/>
-    <a href="nope.html">season 6</a>
-    <br/>
-    <a href="page.html">season 7</a>
+                body 
+                {
+                background-color: lightslategrey; 
+                color: rgb(73, 6, 6);
+                margin: 5% 10%;
+                }
 
-    <!-- more break lines because why not -->
+                h1 
+                {
+                    text-align: center;
+                    font-size: 40px;
+                }
 
-    <br/>
-    <br/>
-    <br/>
+                p 
+                {
+                    font-size: 20px;
+                    text-align: center;
+                } 
 
-    <!-- a table that didnt want to work for the longest time  -->
+                /* this makes the fun box that changes colours */
 
-    <table>
-        <tr>
-          <th>season</th>  
-          <th>episodes</th>
-        </tr>
-        <tr>
-            <td>season 1</td>
-            <td>22</td>
-        </tr>
-        <tr>
-            <td>season 2</td>
-            <td>22</td>
-        </tr>
-        <tr>
-            <td>season 3</td>
-            <td>22</td>
-        </tr>
-        <tr>
-            <td>season 4</td>
-            <td>22</td>
-        </tr>
-        <tr>
-            <td>season 5</td>
-            <td>22</td>
-        </tr>
-        <tr>
-            <td>season 6</td>
-            <td>13</td>
-        </tr>
-        <tr>
-            <td>season 7</td>
-            <td>12</td>
-        </tr> 
-    </table>
+                div 
+                {
+                    width: 1000px;
+                    height: 400px;
+                    background: lightslategray;
+                }
 
-    <!-- i had a hard time with these and they probably dont work right but its whatever -->
+                div:hover 
+                {
+                    background: rgb(73, 6, 6);
+                    transform: rotate(180deg);
+                }
 
-    <iframe name="star wars" frameborder="0" width="400" height="400"></iframe> 
-
-        <a href="https://www.starwars.com/" target="star wars">
-            the official star wars website 
-        </a>
-
-        <br/>
-        <br/>
-        <br/>
-
-    <iframe name="star wars" frameborder="0" width="400" height="400"></iframe> 
-
-        <a href="https://www.youtube.com/watch?v=78cyA-aGaKc" target="star wars">
-            star wars lofi 
-    </a>
-     
+                /* this bit makes it so that when you minimis the screen the colour changes */
+                @media screen and (max-width: 600px) {
+                    body 
+                    {
+                        background-color: lightslategray;
+                        color: white;
+                    }
+                }
 
 
+                @media screen and (max-width: 900px) {
+                body 
+                {
+                    background-color: lightblue;
+                    color: white;
+                    }
+                }
 
-</body>
-</html>
+                /* this just makes the button in the middle  */
+                button
+                {
+                    display: inline-block;
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                
+           </style>
+        </head> 
+
+        <body>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">home page</a>
+                    </li>
+                    <li>
+                        <a href="rogue.html">rogues</a>
+                    </li>
+                    <li>
+                        <a href="monk.html">monks</a>
+                    </li>
+                    <li>
+                        <a href="bard.html">bards</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <br/>
+            <br/>
+
+            <!-- a picture of the dnd logo as the website wouldent be complete with out it  -->
+            <img src="pictures/dnd1.png" alt="a picture of the D&D logo featuring two black uppercase Ds with an andpersand styled as a dragon" width="200">
+
+            <h1>final project</h1>
+
+            <!-- important information -->
+            <p>for my final project i am making a website that talks about the diffrent classes in dnd but specicaly the ones I have played/want to play. The classes that i will be talking about are Rouge (that i main) Monk (that i played once) and Bard (that i want to play) </p>
+
+            <!-- many breaklines -->
+            <br/>
+            <br/>
+
+            <!-- the trasititon  -->
+            <div></div>
+
+            <br/>
+            <br/>
+
+            <!-- i just thought that this was neat but i have no clue how to integrate it -->
+            <button type="button" onclick="document.getElementById('showtime').innerHTML = calcTime()">Click here to show the time in Chicago, where Gary Gygax, one of the creators of DnD was born.</button>
+
+            <p id="showtime"></p>
+
+
+        </body>
+        <script>
+            function calcTime() {
+                let date = new Date();
+
+                let offset = -6;
+
+                if((new Date()).getMonth() > 2 &&  (new Date).getMonth() < 10){
+                    offset = -5;
+                }
+                
+
+                let localTime = date.getTime();
+
+                let localOffset = date.getTimezoneOffset()*60000;
+
+                let utc = localTime + localOffset;
+
+                let chicago = utc + (3600000*offset);
+                
+                let newDate = new Date(chicago);
+
+                return newDate;
+            }
+        </script>
+   </html>
+
+

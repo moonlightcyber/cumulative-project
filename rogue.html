@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+   <html>
+       <head>
+           <meta charset="utf-8"/>
+           <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+           <title>rouges</title>
+           <link rel="stylesheet" type="text/css" href="style/syle.css">
+
+           <style>
+
+               /* basic styling because i dont trust my sass */
+                body 
+                {
+                background-color: lightslategrey; 
+                color: rgb(73, 6, 6);
+                margin: 5% 10%;
+                }
+
+                h1 
+                {
+                    text-align: center;
+                    font-size: 40px;
+                }
+
+                p 
+                {
+                    font-size: 20px;
+                    text-align: center;
+                } 
+
+
+            #gallery {
+               
+                display: -ms-grid;
+                display: grid;
+
+                width: 100%;
+                height: 100%;
+
+                grid-template-rows: repeat(2, 1fr);
+
+                grid-template-columns: repeat(3, 1fr);
+
+                grid-auto-columns: minmax(270px, 1fr);
+                grid-auto-flow: column dense;
+
+                -ms-grid-gap: 10px;
+                grid-gap: 10px;
+                gap: 10px;
+            }
+
+            #gallery a, #gallery img {
+                width: 100%;
+                height: 100%;
+            }
+           </style>
+        </head>
+
+        <body>
+
+            <!--  -->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">home page</a>
+                    </li>
+                    <li>
+                        <a href="rogue.html">rogues</a>
+                    </li>
+                    <li>
+                        <a href="monk.html">monks</a>
+                    </li>
+                    <li>
+                        <a href="bard.html">bards</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <h1> Rogue </h1>
+            <!-- i love rogues so this one has the most information in it  -->
+            
+            <p> Rogues are my favourate class to play, which tracks. </p>
+
+            <br/>
+
+            <p> Rogues are a stealth oriented class that are known for being broken when paired with the correct races. an example of this is my character which is a half-elf rogue. Mr.Coppens hates this character as i can one shot monsters which is very inconvenint for him. </p>
+
+            <p> Rogues specalize in long distance fighting with bows and crossbows but are also proficent with rapiers and daggers for closer combat.  </p>
+            
+            <div id="gallery">
+                <!-- rouges in all shapes and sizes -->
+    
+                
+                <img src="pictures/rogue1.jpg"/>
+                
+                <img src="pictures/rogue2.png">
+
+                <img src="pictures/rogue3.jpg">
+
+                <img src="pictures/rogue4.png">
+
+                <img src="pictures/rogue5.jpg">
+
+                <img src="pictures/rogue6.png">               
+           
+            </div>
+
+        </body>
+   </html>

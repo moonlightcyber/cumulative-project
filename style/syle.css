@@ -1,0 +1,91 @@
+nav {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  width: 100%;
+}
+
+nav ul {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+nav li {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 5px;
+  margin: 4px;
+  font-size: 20px;
+}
+
+nav li a {
+  display: block;
+  padding: 5px;
+  margin: 4px;
+  border: 2px solid black;
+  background-color: #490606;
+  color: lightslategray;
+  text-align: center;
+  font-weight: bolder;
+}
+
+body {
+  background-color: #490606;
+  color: lightslategrey;
+  margin: 5% 10%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+p {
+  font-size: 20px;
+  text-align: center;
+}
+
+#gallery {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-row: repeat(5, minmax(270px, 1fr));
+  -ms-grid-rows: (minmax(270px, 1fr))[5];
+      grid-template-rows: repeat(5, minmax(270px, 1fr));
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-column: repeat(2, minmax(480px, 1fr));
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-auto-columns: minmax(270px, 1fr);
+  grid-auto-flow: column dense;
+  -ms-grid-gap: 10px;
+  grid-gap: 10px;
+  gap: 10px;
+}
+
+#gallery #gallery a, #gallery #gallery img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: lightslategray;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    background-color: lightblue;
+    color: white;
+  }
+}
